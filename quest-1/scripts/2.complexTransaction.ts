@@ -6,18 +6,11 @@
 // import custom helpers for demos
 import { payer, testWallet, connection, STATIC_PUBLICKEY } from "@/lib/vars";
 import { explorerURL, printConsoleSeparator } from "@/lib/helpers";
-
 import { SystemProgram, TransactionMessage, VersionedTransaction } from "@solana/web3.js";
 
 (async () => {
-  //////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
-
   console.log("Payer address:", payer.publicKey.toBase58());
   console.log("Test wallet address:", testWallet.publicKey.toBase58());
-
-  //////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
 
   /**
    * create a simple instruction (using web3.js) to create an account
@@ -93,7 +86,7 @@ import { SystemProgram, TransactionMessage, VersionedTransaction } from "@solana
   // create a versioned transaction using the message
   const tx = new VersionedTransaction(message);
 
-  // console.log("tx before signing:", tx);
+  console.log("tx before signing:", tx);
 
   // sign the transaction with our needed Signers (e.g. `payer` and `keypair`)
   tx.sign([payer, testWallet]);
