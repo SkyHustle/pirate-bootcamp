@@ -22,14 +22,8 @@ import {
 } from "@metaplex-foundation/mpl-token-metadata";
 
 (async () => {
-  //////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
-
   console.log("Payer address:", payer.publicKey.toBase58());
   console.log("Test wallet address:", testWallet.publicKey.toBase58());
-
-  //////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
 
   // generate a new keypair to be used for our mint
   const mintKeypair = Keypair.generate();
@@ -41,11 +35,11 @@ import {
     // define how many decimals we want our tokens to have
     decimals: 2,
     //
-    name: "Seven Seas Gold",
+    name: "CrptoMeTree",
     //
-    symbol: "GOLD",
+    symbol: "CMT",
     //
-    uri: "https://thisisnot.arealurl/info.json",
+    uri: "https://twitter.com/Sky_Hustle",
   };
 
   // image url: https://bafybeihkc3tu4ugc5camayoqw7tl2lahtzgm2kpiwps3itvfsv7zcmceji.ipfs.nftstorage.link/
