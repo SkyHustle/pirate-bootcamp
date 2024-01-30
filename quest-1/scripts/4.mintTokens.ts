@@ -10,12 +10,7 @@ import { PublicKey } from "@solana/web3.js";
 import { getOrCreateAssociatedTokenAccount, mintTo } from "@solana/spl-token";
 
 (async () => {
-  //////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
-
   console.log("Payer address:", payer.publicKey.toBase58());
-
-  //////////////////////////////////////////////////////////////////////////////
 
   // load the stored PublicKeys for ease of use
   let localKeys = loadPublicKeysFromFile();
@@ -29,9 +24,6 @@ import { getOrCreateAssociatedTokenAccount, mintTo } from "@solana/spl-token";
   console.log("==== Local PublicKeys loaded ====");
   console.log("Token's mint address:", tokenMint.toBase58());
   console.log(explorerURL({ address: tokenMint.toBase58() }));
-
-  //////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
 
   /**
    * SPL tokens are owned using a special relationship where the actual tokens
@@ -78,6 +70,7 @@ import { getOrCreateAssociatedTokenAccount, mintTo } from "@solana/spl-token";
 
   // mint some token to the "ata"
   console.log("Minting some tokens to the ata...");
+
   const mintSig = await mintTo(
     connection,
     payer,

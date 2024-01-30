@@ -35,9 +35,9 @@ import {
     // define how many decimals we want our tokens to have
     decimals: 2,
     //
-    name: "CrptoMeTree",
+    name: "CrptoMeTree Part 2",
     //
-    symbol: "CMT",
+    symbol: "CMT2",
     //
     uri: "https://twitter.com/Sky_Hustle",
   };
