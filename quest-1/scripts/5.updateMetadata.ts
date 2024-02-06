@@ -45,11 +45,11 @@ import {
   // define the new token config settings
   const tokenConfig = {
     // new name
-    name: "New Super Sweet Token",
+    name: "CryptoMeTree Part 2 Updated",
     // new symbol
-    symbol: "nSST",
+    symbol: "CMT2U",
     // new uri
-    uri: "https://thisisnot.arealurl/new.json",
+    uri: "https://twitter.com/Sky_Hustle",
   };
 
   /**
